@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/view_item.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <img class="itemimage" src="https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?w=1380&t=st=1657178102~exp=1657178702~hmac=eee7e590a1a70249bf6c36e8a3e6730261dc173c7646ecb66031fb4947bfea5f" alt="">
+        <div class="dataCon">
+            <div class="p1">
+                <div class="name"></div>
+                <div class="description"></div>
+                <div class="price"></div>
+            </div>
+            <div class="p2">
+                <div class="p2a" style="margin-bottom:15px">
+                    <label for="">Available Quantity</label> &nbsp;&nbsp;
+                    <label for="" class="avlqty"></label>                
+                </div>
+                <div class="p2b">
+                    <label for="" >Select Quantity</label> &nbsp;&nbsp;
+                    <input type="number" class="selectQty" max="" min="1" value="1" >
+                </div>
+                &nbsp;
+                <div style="width:100%;text-align: right;">
+                <button id="addToCart" class="btn btn-danger btn-sm">Add to cart</button>
+                </div>
+                <input type="hidden" name="" id="availableQty" value="0">
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/view_item.js' %}"></script>
+</body>
+</html>

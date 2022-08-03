@@ -1,0 +1,3 @@
+kubectl get pods
+kubectl exec -it mysql-779675bb5f-xb246 -- /bin/bash
+mysql -u root -h 127.0.0.1 -p

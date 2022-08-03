@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rows{
+    display: flex;
+    margin:10px;
+    align-items: center;
+}
+input{
+    height: 30px;
+}
+.title{
+    margin: 10px;
+    width: 100px;
+}

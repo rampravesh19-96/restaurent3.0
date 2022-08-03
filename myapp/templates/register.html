@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+    <style>
+        .wrapper{
+            background-image: url("{% static 'images/bg-registration-form-3.jpg'%}");
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="inner">
+            
+                <h3>Register</h3>
+                <form id="registerform">
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Name:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-account-o"></i>
+                            <input type="text" class="form-control" placeholder="Name" id="name">
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="">Email:</label>
+                        <div class="form-holder">
+                            <i style="font-style: normal; font-size: 15px;">@</i>
+                            <input type="text" class="form-control" placeholder="Email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Password:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-lock-outline"></i>
+                            <input type="password" class="form-control" placeholder="********" id="password">
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="">Repeat Password:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-lock-outline"></i>
+                            <input type="password" class="form-control" placeholder="********" id="confirmPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Phone:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-phone"></i>
+                            <input type="text" class="form-control" placeholder="Phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="">DOB:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-calendar"></i>
+                            <input type="text" class="form-control" placeholder="Dob" id="dob">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Address:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-gps-dot"></i>
+                            <input type="text" class="form-control" placeholder="Address" id="address">
+                        </div>
+                    </div>
+                    <div class="form-wrapper"></div>
+                </div>
+ 
+
+                <div class="form-end">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Already have an account? <a href="/login" class="text-primary">Login here</a>
+                        </label>
+                    </div>
+                    <div class="button-holder">
+                        <button id="registerbtn">Register Now</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/register.js' %}"></script>
+</body>
+</html>

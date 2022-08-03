@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+        
+    <style>
+        .wrapper{
+            background-image: url("{% static 'images/bg-registration-form-3.jpg'%}");
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="inner">
+                <h3>Login</h3>
+                <form id="loginform">
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Email:</label>
+                        <div class="form-holder">
+                            <i style="font-style: normal; font-size: 15px;">@</i>
+                            <input id="email" type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+          
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">Password:</label>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-lock-outline"></i>
+                            <input id="password" type="password" class="form-control" placeholder="********" >
+                        </div>
+                    </div>
+                    <div class="form-wrapper"></div>
+                </div>
+ 
+
+                <div class="form-end">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Don't have an account? <a href="/register" class="text-primary">Register here</a>
+                        </label>
+                    </div>
+                    <div class="button-holder">
+                        <a href="/forgot-password" class="text-primary">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="form-end mg">
+                    <div class="checkbox">
+             
+                    </div>
+                    <div class="button-holder">
+                        <button id="loginbtn">Login</button>
+                    </div>
+                    
+                </div>
+                </form>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/login.js' %}"></script>
+</body>
+</html>
